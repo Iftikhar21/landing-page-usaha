@@ -4,24 +4,24 @@ import FAQItem from './FAQItems';
 const FAQ = () => {
   const faqItems = [
     {
-      question: 'Apakah template bisa dikustomisasi sesuai kebutuhan?',
-      answer: 'Ya, semua template kami dapat dikustomisasi sepenuhnya. Kami menyediakan file sumber dan dokumentasi lengkap untuk memudahkan proses kustomisasi sesuai kebutuhan Anda.'
+      question: 'Apakah desain bisa disesuaikan dengan branding saya?',
+      answer: 'Bisa banget! Kami terbuka untuk revisi dan penyesuaian agar desain atau website kamu sesuai dengan identitas brand atau personal style.'
     },
     {
-      question: 'Bagaimana cara mendapatkan template setelah pembelian?',
-      answer: 'Setelah konfirmasi pembayaran, Anda akan menerima email dengan link download yang berisi semua file template, dokumentasi, dan petunjuk instalasi.'
+      question: 'Berapa lama proses pengerjaan website?',
+      answer: 'Tergantung jenis layanan. Untuk landing page biasanya 2–5 hari kerja, sementara web portfolio bisa memakan waktu 5–10 hari tergantung revisi dan konten.'
     },
     {
-      question: 'Apakah ada support teknis jika mengalami kesulitan?',
-      answer: 'Tentu! Kami menyediakan support melalui email dan WhatsApp. Untuk paket bundle dan custom, Anda mendapatkan support prioritas dengan response time yang lebih cepat.'
+      question: 'Apakah saya bisa request fitur tertentu di landing page?',
+      answer: 'Tentu! Kami bisa bantu custom fitur seperti form kontak, tombol WhatsApp, integrasi social media, bahkan animasi interaktif.'
     },
     {
-      question: 'Metode pembayaran apa saja yang tersedia?',
-      answer: 'Kami menerima pembayaran melalui transfer bank, e-wallet (OVO, GoPay, DANA), dan berbagai metode pembayaran digital lainnya untuk kemudahan Anda.'
+      question: 'Bagaimana sistem pembayaran?',
+      answer: 'Pembayaran bisa dilakukan melalui transfer bank atau e-wallet (DANA, OVO, GoPay). Untuk project custom, DP 50% akan diminta di awal.'
     },
     {
-      question: 'Apakah template compatible dengan semua browser?',
-      answer: 'Ya, semua template kami telah ditest dan kompatibel dengan browser modern seperti Chrome, Firefox, Safari, dan Edge. Template juga responsive untuk semua ukuran layar.'
+      question: 'Apakah website yang dibuat mobile friendly?',
+      answer: 'Ya, semua desain dan website kami sudah responsif dan dioptimalkan untuk tampil bagus di HP, tablet, dan laptop.'
     }
   ];
 
@@ -29,8 +29,8 @@ const FAQ = () => {
     <section className="py-20 bg-accent">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-          <p className="text-xl text-gray-600">Pertanyaan yang sering diajukan</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Pertanyaan Umum</h2>
+          <p className="text-xl text-gray-600">Kamu mungkin ingin tahu hal-hal ini</p>
         </div>
         <div className="space-y-6">
           {faqItems.map((item, index) => (

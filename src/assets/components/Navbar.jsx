@@ -28,7 +28,9 @@ function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
-                        <div className="text-2xl font-bold text-primary">EduXpace</div>
+                        <div className="font-bold text-primary">
+                            <img src="public/logo hitam wixiz.png" alt="" className="h-16 rounded-full"/>
+                        </div>
                     </div>
                     {/* Desktop Menu */}
                     <div className="hidden md:block">

@@ -27,7 +27,7 @@ function App() {
       <Adventages />
       <TargetAudience />
       <Gallery />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Pricing />
       <FAQ />
       <Contact />
