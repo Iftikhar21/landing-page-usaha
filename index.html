@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <script>
@@ -20,8 +21,8 @@
             'poppins': ['Poppins', 'sans-serif']
           },
           colors: {
-            primary: '#3B82F6',
-            secondary: '#1E40AF',
+            primary: '#1A1A1A',
+            secondary: '#666666',
             accent: '#F1F5F9'
           }
         }
@@ -36,22 +37,7 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   <script src="/src/faq.js"></script>
-  <script>
-    document.querySelectorAll('.bg-white button').forEach(button => {
-      button.addEventListener('click', function () {
-        const content = this.nextElementSibling;
-        const icon = this.querySelector('svg');
-
-        if (content.style.display === 'none' || !content.style.display) {
-          content.style.display = 'block';
-          icon.style.transform = 'rotate(180deg)';
-        } else {
-          content.style.display = 'none';
-          icon.style.transform = 'rotate(0deg)';
-        }
-      });
-    });
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>

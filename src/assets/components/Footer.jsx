@@ -4,7 +4,7 @@ function Footer() {
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div class="col-span-1 md:col-span-2">
-                        <div class="text-2xl font-bold text-primary mb-4">EduXpace</div>
+                        <div class="text-2xl font-bold text-white mb-4">EduXpace</div>
                         <p class="text-gray-300 mb-6 max-w-md">Template edukatif dan website siap pakai untuk semua
                             kalangan. Solusi terbaik dengan harga terjangkau dan kualitas premium.</p>
                         <div class="flex space-x-4">

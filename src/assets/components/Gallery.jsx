@@ -12,7 +12,7 @@ function Gallery() {
                         <div class="h-64 bg-gradient-to-br from-blue-400 to-blue-600"></div>
                         <div
                             class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
-                            <button
+                            <button data-modal-target="static-modal" data-modal-toggle="static-modal"
                                 class="bg-white text-primary px-6 py-2 rounded-lg font-semibold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                                 Lihat Detail
                             </button>

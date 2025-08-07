@@ -1,6 +1,6 @@
 function Hero() {
     return (
-        <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100 mt-[65px]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col lg:flex-row items-center">
                     <div class="lg:w-1/2 mb-10 lg:mb-0">
@@ -28,12 +28,11 @@ function Hero() {
                     <div class="lg:w-1/2">
                         <div class="relative">
                             <div
-                                class="w-full h-96 bg-gradient-to-br from-primary to-secondary rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                                class="w-full h-96 bg-primary from-primary to-secondary rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
                             </div>
                             <div class="absolute inset-4 bg-white rounded-2xl shadow-xl flex items-center justify-center">
                                 <div class="text-center">
-                                    <div
-                                        class="w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <div class="w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
                                             viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

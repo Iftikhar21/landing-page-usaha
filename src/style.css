@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+    scroll-behavior: smooth;
+}
+
 /* Sembunyikan scrollbar untuk Chrome, Safari dan Opera */
 body::-webkit-scrollbar {
     display: none;
@@ -7,7 +11,5 @@ body::-webkit-scrollbar {
 
 /* Sembunyikan scrollbar untuk IE, Edge dan Firefox */
 body {
-    -ms-overflow-style: none;  /* IE dan Edge */
-    scrollbar-width: none;     /* Firefox */
     overflow-x: hidden;
 }
