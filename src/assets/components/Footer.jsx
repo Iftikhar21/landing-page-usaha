@@ -35,7 +35,7 @@ function Footer() {
                     </div>
                 </div>
                 <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                    <p>&copy; 2024 wixiz.io. All rights reserved. Made with ❤️ to empower your digital presence.</p>
+                    <p>&copy; 2024 wixiz.io. All rights reserved.</p>
                 </div>
             </div>
         </footer>
