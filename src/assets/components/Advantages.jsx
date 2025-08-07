@@ -1,6 +1,6 @@
 function Adventages() {
     return (
-        <section className="py-20 bg-gray-50" id="features">
+        <section className="py-20 bg-gray-50" id="services">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold text-gray-900">Mengapa Memilih Layanan Kami?</h2>

@@ -18,7 +18,6 @@ function Navbar() {
         };
     }, []);
 
-    // Close menu on nav click (mobile)
     const handleNavClick = () => {
         setMenuOpen(false);
     };
@@ -29,22 +28,21 @@ function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
                         <div className="font-bold text-primary">
-                            <img src="public/logo hitam wixiz.png" alt="" className="h-16 rounded-full"/>
+                            <img src="public/logo hitam wixiz.png" alt="Wixiz Logo" className="h-12 rounded-full" />
                         </div>
                     </div>
-                    {/* Desktop Menu */}
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-4">
                             <a href="#home" className="relative text-gray-700 px-3 py-2 group">
                                 <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Beranda</span>
                                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                             </a>
-                            <a href="#features" className="relative text-gray-700 px-3 py-2 group">
-                                <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Fitur</span>
+                            <a href="#services" className="relative text-gray-700 px-3 py-2 group">
+                                <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Layanan</span>
                                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                             </a>
-                            <a href="#gallery" className="relative text-gray-700 px-3 py-2 group">
-                                <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Template</span>
+                            <a href="#portfolio" className="relative text-gray-700 px-3 py-2 group">
+                                <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Portfolio</span>
                                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                             </a>
                             <a href="#pricing" className="relative text-gray-700 px-3 py-2 group">
@@ -57,7 +55,6 @@ function Navbar() {
                             </a>
                         </div>
                     </div>
-                    {/* Mobile Hamburger */}
                     <div className="md:hidden">
                         <button
                             className="text-gray-700 hover:text-primary focus:outline-none"
@@ -65,12 +62,10 @@ function Navbar() {
                             aria-label="Toggle menu"
                         >
                             {menuOpen ? (
-                                // Close icon
                                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             ) : (
-                                // Hamburger icon
                                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
@@ -79,7 +74,6 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            {/* Mobile Dropdown Menu */}
             {menuOpen && (
                 <div className="md:hidden w-full bg-white border-t border-gray-200 shadow-lg animate-fadeInDown z-50 absolute left-0">
                     <div className="flex flex-col py-4 px-6 space-y-2">
@@ -87,12 +81,12 @@ function Navbar() {
                             <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Beranda</span>
                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                         </a>
-                        <a href="#features" onClick={handleNavClick} className="relative text-gray-700 py-2 group inline-block">
-                            <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Fitur</span>
+                        <a href="#services" onClick={handleNavClick} className="relative text-gray-700 py-2 group inline-block">
+                            <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Layanan</span>
                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                         </a>
-                        <a href="#gallery" onClick={handleNavClick} className="relative text-gray-700 py-2 group inline-block">
-                            <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Template</span>
+                        <a href="#portfolio" onClick={handleNavClick} className="relative text-gray-700 py-2 group inline-block">
+                            <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Galeri</span>
                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                         </a>
                         <a href="#pricing" onClick={handleNavClick} className="relative text-gray-700 py-2 group inline-block">

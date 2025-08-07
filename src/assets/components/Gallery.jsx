@@ -1,6 +1,6 @@
 function Gallery() {
     return (
-        <section id="gallery" class="py-20 bg-white">
+        <section id="portfolio" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Galeri Template</h2>
