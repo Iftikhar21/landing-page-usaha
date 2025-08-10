@@ -1,12 +1,43 @@
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+
 function Contact() {
+    const [isSuccess, setIsSuccess] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setIsLoading(true); // mulai loading
+
+        emailjs.sendForm(
+            "service_wixiz.co",
+            "template_konsultasi",
+            e.target,
+            "eJTKePi86lm1tU1-6"
+        ).then(
+            () => {
+                setIsLoading(false); // stop loading
+                setIsSuccess(true);
+                e.target.reset();
+            },
+            (error) => {
+                setIsLoading(false); // stop loading kalau error
+                alert("Gagal mengirim pesan: " + error.text);
+            }
+        );
+    };
+
     return (
-        <section id="contact" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Hubungi Kami</h2>
-                    <p class="text-xl text-gray-600">Siap membantu kebutuhan template Anda</p>
+        <section id="contact" className="py-20 bg-white relative">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Judul */}
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Hubungi Kami</h2>
+                    <p className="text-xl text-gray-600">Siap membantu kebutuhan template Anda</p>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    {/* Info Kontak */}
                     <div>
                         <h3 class="text-2xl font-bold text-gray-900 mb-6">Mari Berkonsultasi</h3>
                         <p class="text-gray-600 mb-8">Wixiz siap membantu Anda memilih template yang tepat sesuai
@@ -71,25 +102,22 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div class="bg-accent p-8 rounded-xl">
-                        <form class="space-y-6">
+
+                    {/* Form */}
+                    <div className="bg-accent p-8 rounded-xl">
+                        <form className="space-y-6" onSubmit={sendEmail}>
                             <div>
-                                <label class="block text-sm font-semibold text-gray-900 mb-2">Nama Lengkap</label>
-                                <input type="text"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                                    placeholder="Masukkan nama lengkap" />
+                                <label className="block text-sm font-semibold text-gray-900 mb-2">Nama Lengkap</label>
+                                <input type="text" name="name" className="w-full px-4 py-3 border border-gray-300 rounded-lg" required />
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-gray-900 mb-2">Email</label>
-                                <input type="email"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                                    placeholder="Masukkan email" />
+                                <label className="block text-sm font-semibold text-gray-900 mb-2">Email</label>
+                                <input type="email" name="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg" required />
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-gray-900 mb-2">Jenis Layanan</label>
-                                <select
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
-                                    <option>Pilih layanan yang diinginkan</option>
+                                <label className="block text-sm font-semibold text-gray-900 mb-2">Jenis Layanan</label>
+                                <select name="service" className="w-full px-4 py-3 border border-gray-300 rounded-lg" required>
+                                    <option value="">Pilih layanan yang diinginkan</option>
                                     <option>Desain Visual</option>
                                     <option>Website Portfolio</option>
                                     <option>Landing Page</option>
@@ -97,19 +125,36 @@ function Contact() {
                                 </select>
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-gray-900 mb-2">Pesan</label>
-                                <textarea rows="4"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                                    placeholder="Ceritakan kebutuhan Anda..."></textarea>
+                                <label className="block text-sm font-semibold text-gray-900 mb-2">Pesan</label>
+                                <textarea rows="4" name="message" className="w-full px-4 py-3 border border-gray-300 rounded-lg" required></textarea>
                             </div>
-                            <button type="submit"
-                                class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transform hover:scale-105 transition-all duration-300">
-                                Kirim Pesan
+                            <button
+                                type="submit"
+                                disabled={isLoading}
+                                className={`w-full py-3 rounded-lg font-semibold text-white ${isLoading ? "bg-gray-400 cursor-not-allowed" : "bg-primary"}`}
+                            >
+                                {isLoading ? "Mengirim..." : "Kirim Pesan"}
                             </button>
                         </form>
                     </div>
                 </div>
             </div>
+
+            {/* Modal sukses */}
+            {isSuccess && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                    <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
+                        <h3 className="text-xl font-bold mb-2">Berhasil!</h3>
+                        <p className="text-gray-600 mb-4">Pesan Anda berhasil dikirim.</p>
+                        <button
+                            onClick={() => setIsSuccess(false)}
+                            className="bg-primary text-white px-4 py-2 rounded-lg"
+                        >
+                            Tutup
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }

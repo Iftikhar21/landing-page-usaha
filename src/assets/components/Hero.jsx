@@ -33,12 +33,7 @@ function Hero() {
                             <div className="absolute inset-4 bg-white rounded-2xl shadow-xl flex items-center justify-center">
                                 <div className="text-center">
                                     <div className="w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                            </path>
-                                        </svg>
+                                        <img src="logo putih wixiz.png" alt="Wixiz Logo" className="rounded-full" />
                                     </div>
                                     <h3 className="text-xl font-semibold text-gray-800">Website & Desain Siap Pakai</h3>
                                     <p className="text-gray-600 mt-2">Desain profesional & bisa custom sesuai kebutuhanmu</p>
