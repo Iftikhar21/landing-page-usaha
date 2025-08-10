@@ -11,14 +11,13 @@ function Pricing() {
                     {/* Paket 1 */}
                     <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                         <div className="text-center">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Design Template</h3>
-                            <div className="text-4xl font-bold text-primary mb-2">Rp 90K</div>
-                            <p className="text-gray-600 mb-8">Cocok untuk personal & UMKM</p>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Design Brosur / Poster / Spanduk</h3>
+                            <div className="text-xl font-bold text-primary mb-2">Rp 15K – Rp 20K</div>
+                            <p className="text-gray-600 mb-8">Cocok untuk promosi bisnis & acara</p>
                             <ul className="text-left space-y-3 mb-8">
-                                <li className="flex items-center">✅ 1 Desain pilihan</li>
-                                <li className="flex items-center">✅ File source siap edit</li>
-                                <li className="flex items-center">✅ Manual penggunaan</li>
-                                <li className="flex items-center">✅ Revisi minor 1x</li>
+                                <li>✅ Desain custom</li>
+                                <li>✅ File siap cetak</li>
+                                <li>✅ Revisi minor</li>
                             </ul>
                             <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition-colors duration-300">
                                 Pilih Paket
@@ -32,14 +31,13 @@ function Pricing() {
                             <span className="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">TERLARIS</span>
                         </div>
                         <div className="text-center">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Web Portfolio</h3>
-                            <div className="text-4xl font-bold text-primary mb-2">Rp 300K</div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Landing Page + Portofolio (Hosting Gratis)</h3>
+                            <div className="text-xl font-bold text-primary mb-2">Rp 70K – Rp 80K</div>
                             <p className="text-gray-600 mb-8">Menampilkan karya dan profil kamu</p>
                             <ul className="text-left space-y-3 mb-8">
-                                <li className="flex items-center">✅ 1 halaman portfolio</li>
-                                <li className="flex items-center">✅ Desain responsif</li>
-                                <li className="flex items-center">✅ Hosting 1 bulan</li>
-                                <li className="flex items-center">✅ Revisi 2x</li>
+                                <li>✅ 1 halaman portfolio</li>
+                                <li>✅ Desain responsif</li>
+                                <li>✅ Hosting gratis</li>
                             </ul>
                             <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition-colors duration-300">
                                 Pilih Paket
@@ -50,14 +48,13 @@ function Pricing() {
                     {/* Paket 3 */}
                     <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                         <div className="text-center">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Landing Page</h3>
-                            <div className="text-4xl font-bold text-primary mb-2">Mulai Rp 500K</div>
-                            <p className="text-gray-600 mb-8">Desain profesional untuk konversi</p>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Landing Page + Portofolio (Hosting Berbayar)</h3>
+                            <div className="text-xl font-bold text-primary mb-2">Rp 115K – Rp 120K</div>
+                            <p className="text-gray-600 mb-8">Biaya hosting Rp 45K/bulan</p>
                             <ul className="text-left space-y-3 mb-8">
-                                <li className="flex items-center">✅ Full custom layout</li>
-                                <li className="flex items-center">✅ Copywriting dasar</li>
-                                <li className="flex items-center">✅ Mobile friendly</li>
-                                <li className="flex items-center">✅ Revisi tanpa batas</li>
+                                <li>✅ 1 halaman portfolio</li>
+                                <li>✅ Desain responsif</li>
+                                <li>✅ Hosting berbayar</li>
                             </ul>
                             <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition-colors duration-300">
                                 Konsultasi Sekarang
