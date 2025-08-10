@@ -28,7 +28,7 @@ function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
                         <div className="font-bold text-primary">
-                            <img src="public/logo hitam wixiz.png" alt="Wixiz Logo" className="h-12 rounded-full" />
+                            <img src="logo hitam wixiz.png" alt="Wixiz Logo" className="h-12 rounded-full" />
                         </div>
                     </div>
                     <div className="hidden md:block">
