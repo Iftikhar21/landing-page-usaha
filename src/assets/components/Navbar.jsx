@@ -41,10 +41,10 @@ function Navbar() {
                                 <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Layanan</span>
                                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                             </a>
-                            <a href="#portfolio" className="relative text-gray-700 px-3 py-2 group">
+                            {/* <a href="#portfolio" className="relative text-gray-700 px-3 py-2 group">
                                 <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Portfolio</span>
                                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-                            </a>
+                            </a> */}
                             <a href="#pricing" className="relative text-gray-700 px-3 py-2 group">
                                 <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Harga</span>
                                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
@@ -85,10 +85,10 @@ function Navbar() {
                             <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Layanan</span>
                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
                         </a>
-                        <a href="#portfolio" onClick={handleNavClick} className="relative text-gray-700 py-2 group inline-block">
+                        {/* <a href="#portfolio" onClick={handleNavClick} className="relative text-gray-700 py-2 group inline-block">
                             <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Galeri</span>
                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-                        </a>
+                        </a> */}
                         <a href="#pricing" onClick={handleNavClick} className="relative text-gray-700 py-2 group inline-block">
                             <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">Harga</span>
                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
