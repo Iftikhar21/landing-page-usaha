@@ -36,8 +36,8 @@ function Footer() {
                         <h3 className="text-lg font-semibold mb-4">Navigasi</h3>
                         <ul className="space-y-2 text-gray-300">
                             <li><a href="#home" className="hover:text-primary transition-colors duration-300">Beranda</a></li>
-                            <li><a href="#features" className="hover:text-primary transition-colors duration-300">Fitur</a></li>
-                            <li><a href="#gallery" className="hover:text-primary transition-colors duration-300">Galeri</a></li>
+                            <li><a href="#services" className="hover:text-primary transition-colors duration-300">Layanan</a></li>
+                            {/* <li><a href="#gallery" className="hover:text-primary transition-colors duration-300">Galeri</a></li> */}
                             <li><a href="#pricing" className="hover:text-primary transition-colors duration-300">Harga</a></li>
                             <li><a href="#contact" className="hover:text-primary transition-colors duration-300">Kontak</a></li>
                         </ul>
